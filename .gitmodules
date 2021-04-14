@@ -1,0 +1,6 @@
+[submodule "live-rewards-frontend"]
+	path = live-rewards-frontend
+	url = git@github.com:AskBid/live-rewards-frontend.git
+[submodule "live-rewards-backend"]
+	path = live-rewards-backend
+	url = git@github.com:AskBid/delake-backend.git
