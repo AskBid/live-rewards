@@ -3,11 +3,11 @@
 SWAN Pool Live-Rewards is a Rails App API Backend that interfaces with a React Frontend.
 
 The architecture of the backend is an improvement over the previous similar app called [delegation-explorer](https://github.com/AskBid/delegation-explorer).
-Rather than query a `[cardano-graphql`](https://github.com/input-output-hk/cardano-graphql) that interfaces with [`cardano-db-sync`](https://github.com/input-output-hk/cardano-db-sync) (which maintannes a postgresql database) to populate our local database, in Live-Rewards I connect directyl to `cardano-db-sync` using a double database system with the Rails backend.
+Rather than query a `[cardano-graphql`](https://github.com/input-output-hk/cardano-graphql) that interfaces with [`cardano-db-sync`](https://github.com/input-output-hk/cardano-db-sync) to populate our local database, in Live-Rewards I connect directly to `cardano-db-sync` using a double database system in the Rails backend.
 
-SWAN Pool Live-Rewards allows a user to connect one or more Stake Address to their account so to check on their rewards before thsoe are sent by the blockchain, this allows to know 10 days in advance what the rewards being accrued are.
+SWAN Pool Live-Rewards allows a user to connect to one or more Stake Addresses so to check on their rewards before receiving them from the blockchain, this allows to know 10 days in advance what the rewards being accrued are.
 
-SWAN Pool Pool-Compare allows User to select a particular Epoch Stake (a delegation of a certain address in a certain epoch) and compare the rewards they would have achieved by delegating instead to different Pools than the actual one the address was delegated to.
+It is also possible to compare the rewards they would have achieved by delegating to different Pools rather than the actual one the address was delegated to.
 
 
 # About Cardano delegations
